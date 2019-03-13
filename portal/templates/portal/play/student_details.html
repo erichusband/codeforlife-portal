@@ -12,10 +12,10 @@
     </div>
 </div>
 <div class="dropdown">
-    <a href="{% url 'game.views.scoreboard.scoreboard' %}" id="student_scoreboards_button"
+    <a href="{% url 'scoreboard' %}" id="student_scoreboards_button"
         class="button--menu button--menu--secondary button--menu--enabled">View Scoreboards</a>
     <div class="dropdown-content">
-        <a href="{% url 'game.views.scoreboard.scoreboard' %}"><small>Rapid Router</small></a>
+        <a href="{% url 'scoreboard' %}"><small>Rapid Router</small></a>
     </div>
 </div>
 {% if not user.new_student.class_field %}
@@ -51,7 +51,7 @@
                 Using Blockly, you can advance through the levels to become an Ocado delivery hero.</p>
             <div>
                 <p><a href="{% url 'play' %}">Learn more about Rapid Router</a></p>
-                <p><a href="{% url 'game.views.scoreboard.scoreboard' %}">View my score</a></p>
+                <p><a href="{% url 'scoreboard' %}">View my score</a></p>
             </div>
             {% if user.new_student.class_field and user|is_preview_user %}
             <section>
