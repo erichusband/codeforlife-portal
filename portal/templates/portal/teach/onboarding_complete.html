@@ -3,7 +3,8 @@
 {% load app_tags %}
 
 {% block dashboard %}
-<a href="{% url 'dashboard' %}" class="button--menu button--menu--secondary button--menu--enabled button--menu--teacher--active">School / Club</a>
+<a href="{% url 'dashboard' %}"
+    class="button--menu button--menu--secondary button--menu--enabled button--menu--teacher--active">School / Club</a>
 {% endblock dashboard %}
 
 {% block css %}
@@ -38,7 +39,8 @@
 {% endblock printStudentCardsStep %}
 {% block setupCompleteStep %}
 <div class="onboarding-step onboarding-step--in-progress">
-    <p><img title="In progress" alt="Step in progress" src="{% static 'portal/img/step_in_progress.png' %}">Setup complete</p>
+    <p><img title="In progress" alt="Step in progress" src="{% static 'portal/img/step_in_progress.png' %}">Setup
+        complete</p>
 </div>
 {% endblock setupCompleteStep %}
 
@@ -52,34 +54,42 @@
     <div class="row row--regular homepage-info">
         <div class="col-sm-9 col-center is-flex">
             <div class="col-sm-4">
-                <img title="Teaching resources" alt="Resources image" src="{% static 'portal/img/teaching_resources.jpg' %}">
+                <img title="Teaching resources" alt="Resources image"
+                    src="{% static 'portal/img/teaching_resources.jpg' %}">
                 <h3>Teaching resources</h3>
-                <p>We&rsquo;ve designed a comprehensive range of teaching resources including session plans, pupil resources and assessment tools.</p>
-                <p>There are also videos to help you and your class understand what you and your class will be learning next.</p>
+                <p>We&rsquo;ve designed a comprehensive range of teaching resources including session plans, pupil
+                    resources and assessment tools.</p>
+                <p>There are also videos to help you and your class understand what you and your class will be learning
+                    next.</p>
                 <div class="background">
-                    <a href="{% url 'teaching_resources' %}" class="button button--regular button--secondary button--secondary--dark">View resources</a>
+                    <a href="{% url 'teaching_resources' %}"
+                        class="button button--regular button--secondary button--secondary--dark">View resources</a>
                 </div>
             </div>
             <div class="col-sm-4">
                 <img title="Rapid Router" alt="Rapid Router" src="{% static 'portal/img/rapid_router.png' %}">
                 <h3>Rapid Router</h3>
-                <p>Get stuck in! Have a go at Rapid Router yourself, this can help you familiarise yourself with the game before letting the students loose.</p>
+                <p>Get stuck in! Have a go at Rapid Router yourself, this can help you familiarise yourself with the
+                    game before letting the students loose.</p>
                 <p>When you&rsquo;re logged in as a teacher you can also
                     <a href="{% url 'game.views.level_moderation.level_moderation' %}">moderate</a>, view
                     <a href="{% url 'game.views.scoreboard.scoreboard' %}">scoreboards</a> and find
                     <a href="{% url 'teacher_level_solutions' %}">solutions</a> to the levels.</p>
                 <div class="background">
-                    <a href="{% url 'game.views.level_selection.levels' %}" class="button button--regular button--secondary button--secondary--dark">Play Rapid Router</a>
+                    <a href="{% url 'rapid_router_levels' %}"
+                        class="button button--regular button--secondary button--secondary--dark">Play Rapid Router</a>
                 </div>
             </div>
             <div class="col-sm-4">
                 <img title="Dashboard" alt="Dashboard screenshot" src="{% static 'portal/img/teacher_dashboard.png' %}">
                 <h3>Teacher dashboard</h3>
-                <p>Need to add more classes, add more students or invite other teachers to join your school? No problem, our teacher dashboard helps you to
+                <p>Need to add more classes, add more students or invite other teachers to join your school? No problem,
+                    our teacher dashboard helps you to
                     administrate your school or club.</p>
                 <p>If you are the school administrator you can invite other teachers to join your school.</p>
                 <div class="background">
-                    <a href="{% url 'dashboard' %}" class="button button--regular button--secondary button--secondary--dark">Go to my dashboard</a>
+                    <a href="{% url 'dashboard' %}"
+                        class="button button--regular button--secondary button--secondary--dark">Go to my dashboard</a>
                 </div>
             </div>
         </div>
