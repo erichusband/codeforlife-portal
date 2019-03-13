@@ -2,8 +2,11 @@
 {% load staticfiles %}
 {% load app_tags %}
 
-{% block nav_play %}<a href="{% url 'play' %}" class="button--menu button--menu--primary button--menu--enabled button--menu--student--active">Students</a>{% endblock nav_play %}
-{% block rapidrouter %}<a href="{% url 'play' %}" class="button--menu button--menu--secondary button--menu--enabled button--menu--teacher--active">Rapid Router</a>{% endblock rapidrouter %}
+{% block nav_play %}<a href="{% url 'play' %}"
+    class="button--menu button--menu--primary button--menu--enabled button--menu--student--active">Students</a>{% endblock nav_play %}
+{% block rapidrouter %}<a href="{% url 'play' %}"
+    class="button--menu button--menu--secondary button--menu--enabled button--menu--teacher--active">Rapid
+    Router</a>{% endblock rapidrouter %}
 
 {% block css %}
 {{block.super}}
@@ -20,7 +23,7 @@
         <div class="col-sm-5 col-sm-offset-2">
             <h1 class="banner--homepage__text banner__text--center">Rapid Router</h1>
             <div class="background">
-                <a href="{% url 'game.views.level_selection.levels' %}" class="button button--jumbo button--primary--general-educate">Play now</a>
+                <a href="{% url 'levels' %}" class="button button--jumbo button--primary--general-educate">Play now</a>
             </div>
         </div>
         <div class="col-sm-4">
@@ -38,7 +41,8 @@
 <div class="background">
     <section>
         <h1>Anyone can code, you can too!</h1>
-        <h4 class="col-sm-6 col-center">Whether you&rsquo;re a teacher or a student, Rapid Router guides you, and makes learning to code easy and great fun. Using Blockly you can advance through the levels
+        <h4 class="col-sm-6 col-center">Whether you&rsquo;re a teacher or a student, Rapid Router guides you, and makes
+            learning to code easy and great fun. Using Blockly you can advance through the levels
             to become an Ocado delivery hero.</h4>
     </section>
     <div class="row row--small homepage-info">
@@ -46,9 +50,11 @@
             <div class="col-sm-4">
                 <img title="Teaching Tools" alt="Teaching Tools" src="{% static 'portal/img/teaching_tools.jpg' %}">
                 <h3>Free teaching tools</h3>
-                <p>Free teaching resources, lesson plans and much more. You can even track your student&rsquo;s progress with our class tracker.</p>
+                <p>Free teaching resources, lesson plans and much more. You can even track your student&rsquo;s progress
+                    with our class tracker.</p>
                 <div class="background">
-                    <a href="{% url 'teach' %}" class="button button--regular button--secondary button--secondary--dark">Learn more</a>
+                    <a href="{% url 'teach' %}"
+                        class="button button--regular button--secondary button--secondary--dark">Learn more</a>
                 </div>
             </div>
             <div class="col-sm-4">
@@ -56,13 +62,15 @@
                 <h3>A fun game for students</h3>
                 <p>You can learn to become a coding superhero, amaze your friends with your high scores.</p>
                 <div class="background">
-                    <a href="{% url 'game.views.level_selection.levels' %}" class="button button--regular button--secondary button--secondary--dark">Play now</a>
+                    <a href="{% url 'game.views.level_selection.levels' %}"
+                        class="button button--regular button--secondary button--secondary--dark">Play now</a>
                 </div>
             </div>
             <div class="col-sm-4">
                 <img title="Blockly" alt="Blocky code" src="{% static 'portal/img/about_blockly.png' %}">
                 <h3>About Blockly</h3>
-                <p>Built on &lsquo;Blockly&rsquo;, an easy-to-use visual programming language that&rsquo;s similar to Scratch, so you don&rsquo;t need
+                <p>Built on &lsquo;Blockly&rsquo;, an easy-to-use visual programming language that&rsquo;s similar to
+                    Scratch, so you don&rsquo;t need
                     to worry about syntax.</p>
             </div>
         </div>
@@ -90,15 +98,16 @@
         </div>
         <div>
             <img title="Phil" alt="Phil image" src="{% static 'portal/img/phil.png' %}">
-            <p>Phil is a Boarsnark, however, he is different to most Boarsnarks because he&rsquo;s very kind, and very gentle.</p>
+            <p>Phil is a Boarsnark, however, he is different to most Boarsnarks because he&rsquo;s very kind, and very
+                gentle.</p>
         </div>
     </div>
 </section>
 
 <script type="text/javascript">
-    $(document).ready(function(){
+    $(document).ready(function () {
         invokeColorbox();
-        if($(window).width() > 760) {
+        if ($(window).width() > 760) {
             toggleStickySubnav($('.menu').outerHeight());
         }
     });
