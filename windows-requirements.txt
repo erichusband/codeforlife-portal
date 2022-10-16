@@ -1,4 +1,4 @@
-django==1.7
+django==3.2.15
 django-appconf==0.6
 django-casper==0.0.2
 djangorestframework==2.3.9
@@ -8,6 +8,6 @@ pyyaml==4.2b1
 six==1.6.1
 docutils==0.11
 postcodes==0.1
-django-two-factor-auth==1.0.0-beta3
+django-two-factor-auth==1.13-beta3
 selenium==2.42.1
 urllib3==1.23
